@@ -7,7 +7,7 @@ from ..compat import get_user_model
 register = template.Library()
 
 
-@register.assignment_tag
+@register.simple_tag
 def badgify_badges(**kwargs):
     """
     Returns all badges or only awarded badges for the given user.
